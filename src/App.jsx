@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import paymand from './paymand.json'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+const Paymand = ({data: {amount, description, cardNumber, cardType, cardOwner, date}}) => {
+
+  return(
+    <div>
+      <p>Amount:{amount}</p>
+      <p>Status of paid of Paimant:{}</p>
+      <p>Description:{description}</p>
+      <p>Card Number:{cardNumber}</p>
+      <p>Card Type:{cardType}</p>
+      <p>Card Honer Name:{cardOwner}</p>
+      <p>Paymend Date:{date}</p>
+    </div>
   )
 }
 
-export default App
+
+export default function App() {
+  // const username = 'Grigoryj';
+  return (
+   <>
+   {/* <Paymand data={data1}/>
+   <hr />
+   <Paymand  data={data2}/> */}
+   <p>{3 > 2 ? <Paymand data={data1}/> : <Paymand  data={data2}/>}</p>
+   </>
+  //     <>
+  //     <p>Hello, Word, my name {username}</p>
+  //     <h1>Vite + React Sashka do it</h1>
+  //     <button>Ckick</button>
+  //     </>
+      
+  );
+}
+
+

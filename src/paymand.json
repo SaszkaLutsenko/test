@@ -1,0 +1,52 @@
+[{
+    "id": "1",
+    "cardNumber": "1234 1234 1234 1234",
+    "cardType": "Visa",
+    "cardOwner": "Grigoryj Matherfucker", 
+    "date": "28.02.2024",
+    "amount": "100",
+    "description": "Paymand for groceries",
+    "isPaimand": true
+  },
+  
+   {
+    "id": "2",
+    "cardNumber": "1254 1254 1254 1254",
+    "cardType": "Visa",
+    "cardOwner": "Sibic Huiznakowicz", 
+    "date": "27.02.2024",
+    "amount": "160",
+    "description": "Paymand for games",
+    "isPaimand": false
+  },
+  {
+    "id": "3",
+    "cardNumber": "1253 1234 1354 1354",
+    "cardType": "Visa",
+    "cardOwner": "Vasyl Huiznakowicz", 
+    "date": "27.02.2024",
+    "amount": "130",
+    "description": "Paymand for patetos",
+    "isPaimand": true
+  },
+  {
+    "id": "4",
+    "cardNumber": "1253 1554 1354 1354",
+    "cardType": "Visa",
+    "cardOwner": "Anton Huiznakowicz", 
+    "date": "27.02.2024",
+    "amount": "130",
+    "description": "Paymand for patetos",
+    "isPaimand": true
+  },
+  {
+    "id": "5",
+    "cardNumber": "1211 1554 1354 1354",
+    "cardType": "Visa",
+    "cardOwner": "Tosha Huiznakowicz", 
+    "date": "27.02.2024",
+    "amount": "130",
+    "description": "Paymand for patetos",
+    "isPaimand": false
+  }
+]
