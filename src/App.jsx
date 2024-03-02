@@ -26,6 +26,12 @@ export default function App() {
    <hr />
    <Paymand  data={data2}/> */}
    <p>{3 > 2 ? <Paymand data={data1}/> : <Paymand  data={data2}/>}</p>
+  
+  
+  <div>
+    {["aaa", "bbb", "ccc"].map(value => <div>{value}</div>)}
+  </div>
+  
    </>
   //     <>
   //     <p>Hello, Word, my name {username}</p>
