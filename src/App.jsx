@@ -1,4 +1,4 @@
-import paymand from './paymand.json'
+import paymand from './paymands.json'
 import './App.css'
 
 
@@ -29,7 +29,7 @@ export default function App() {
   
   
   <div>
-    {["aaa", "bbb", "ccc"].map(value => <div>{value}</div>)}
+    {["aaa", "bbb", "ccc"].map((value) => (<div>(value)</div>))}
   </div>
   
    </>
