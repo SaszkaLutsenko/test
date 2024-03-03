@@ -1,37 +1,26 @@
-import paymand from './paymands.json'
+import paymands from './paymands.json'
 import './App.css'
 
+import { Linter } from 'eslint';
+import { PaymandList } from './components/PaymandList/PaymandList';
 
-const Paymand = ({data: {amount, description, cardNumber, cardType, cardOwner, date}}) => {
 
-  return(
-    <div>
-      <p>Amount:{amount}</p>
-      <p>Status of paid of Paimant:{}</p>
-      <p>Description:{description}</p>
-      <p>Card Number:{cardNumber}</p>
-      <p>Card Type:{cardType}</p>
-      <p>Card Honer Name:{cardOwner}</p>
-      <p>Paymend Date:{date}</p>
-    </div>
-  )
-}
+
+
 
 
 export default function App() {
+
   // const username = 'Grigoryj';
   return (
    <>
    {/* <Paymand data={data1}/>
    <hr />
    <Paymand  data={data2}/> */}
-   <p>{3 > 2 ? <Paymand data={data1}/> : <Paymand  data={data2}/>}</p>
+   {/* <p>{3 > 2 ? <Paymand data={data1}/> : <Paymand  data={data2}/>}</p> */}
   
-  
-  <div>
-    {["aaa", "bbb", "ccc"].map((value) => (<div>(value)</div>))}
-  </div>
-  
+
+  <PaymandList/>
    </>
   //     <>
   //     <p>Hello, Word, my name {username}</p>
